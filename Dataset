@@ -1,0 +1,48 @@
+# Datasets
+
+This project uses two real-world datasets.
+
+---
+
+## Part A — UK Road Accident Data (STATS19)
+
+**File:** `accident_data_v1.0.0_2023.db`
+
+This is an SQLite database provided by the UK Department for Transport containing STATS19 road accident records.
+
+🔗 [UK DfT Road Safety Data](https://www.data.gov.uk/dataset/cb7ae6f0-4be6-4935-9277-47e5ce24a11f/road-safety-data)
+
+The database contains three tables used in this project:
+- `accident` — accident-level records (location, severity, time, conditions)
+- `vehicle` — vehicle-level records (type, manoeuvre)
+- `casualty` — casualty-level records (class, age, severity)
+
+Place the file as:
+```
+data/
+└── accident_data_v1.0.0_2023.db
+```
+
+---
+
+## Part B — Facebook Social Network (SNAP)
+
+**File:** `facebook_combined.txt`
+
+An undirected edge list from Facebook ego-networks, compiled by the Stanford Network Analysis Platform (SNAP).
+
+🔗 [Stanford SNAP — Facebook Dataset](https://snap.stanford.edu/data/ego-Facebook.html)
+
+Place the file as:
+```
+data/
+└── facebook_combined.txt
+```
+
+**Format:** Each line contains two space-separated node IDs representing an edge.
+```
+0 1
+0 2
+0 3
+...
+```
